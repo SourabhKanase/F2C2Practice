@@ -22,7 +22,9 @@ function displaydata(students,inwhichtable)
     {
         let student=students[i];
         let newElement=document.createElement("tr");
-        newElement.innerHTML=`<td>${student.first_name}" "${student.last_name}</td>
+        newElement.innerHTML=`<td>${student.id}</td>
+        <td><img src="${student.img_src}"></td>
+        <td>${student.first_name}" "${student.last_name}</td>
         <td>${student.email}</td>
         <td>${student.gender}</td>
         <td>${student.marks}</td>
