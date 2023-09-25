@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <input type="text" placeholder="search here" name="searchtext" id="input">
+    <button onclick="search()" id="searchbtn">search</button>
+
+    <div class="buttons-flexbox">
+         <button onclick="sortAz()" class="btn">SortA-Z</button>
+         <button onclick="sortZa()" class="btn">SortZ_A</button>
+         <button onclick="sortMarks()" class="btn">SortByMarks</button>
+         <button onclick="sortPassing()" class="btn">Passing</button>
+         <button onclick="sortBy()" class="btn">Gender</button>
+    </div>
+    <center><h2>Maintable</h2></center>
+    <table id="maintable">
+       <thead>
+           <tr>
+               <th>Name</th>
+               <th>Email</th>
+               <th>Gender</th>
+               <th>Marks</th>
+               <th>city</th>
+           </tr>
+       </thead>
+       <tbody id="maintbody">
+
+       </tbody>
+    </table>
+    <center><h2>Male table</h2></center>
+    <table id="maletable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Marks</th>
+                <th>city</th>
+            </tr>
+        </thead>
+        <tbody id="maletbody">
+ 
+        </tbody>
+    </table>
+    <center><h2>female</h2></center>
+    <table id="femaletable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Marks</th>
+                <th>city</th>
+            </tr>
+        </thead>
+        <tbody id="femaletbody">
+ 
+        </tbody>
+    </table>
+   <script src="./script.js"></script>
+</body>
+</html>
